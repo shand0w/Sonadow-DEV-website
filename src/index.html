@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<link rel='shortcut icon' type='image/x-icon' href='../images/icon.ico' />
+<head>
+  <meta keywords=''>
+  <meta charset="UTF-8">
+  <meta description="My FAQ">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>KarolStudios - FAQ</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+  <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+<section class="cd-faq js-cd-faq container max-width-md margin-top-lg margin-bottom-lg">
+	<ul class="cd-faq__categories">
+		<li><a class="cd-faq__category truncate" href="#basics">Account</a></li>
+		<li><a class="cd-faq__category truncate" href="#mobile">Pixel Zone</a></li>
+    <li><a class="cd-faq__category truncate" href="#leveleditor">Level Editor</a></li>
+    <li><a class="cd-faq__category truncate" href="#programmers">For Godot Engine Devs</a></li>
+    <li><a class="cd-faq__category truncate" href="#problems">Problems with the game</a></li>
+	</ul> <!-- cd-faq__categories -->
+
+	<div class="cd-faq__items">
+    <ul id="basics" class="cd-faq__group">
+			<li class="cd-faq__title"><h2>Account</h2></li>
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>How do I Sign In?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>Go to <a href='https://masterpolska123.github.io/#account'>Register account page</a> and create new account.<br/>Also you can do it in game in 'Online Scoreboard'</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+    </ul>
+
+    <ul id="mobile" class="cd-faq__group">
+      <li class="cd-faq__title"><h2>Pixel Zone</h2></li>
+      <li class="cd-faq__item">
+        <a class="cd-faq__trigger" href="#0"><span>How does modifications system works</span></a>
+        <div class="cd-faq__content">
+          <div class="text-component">
+            <p>Resources from modifications are loaded 'next to' game resources. In this way you can use the game's resources and one modification at the same time. If the resources have the same name and path, the game will not load them correctly. Modification for the scene of the main game menu (in the code called GUI.tscn) is the scene with the path 'res: //mod.tscn', but it is not required to load modification.</p>
+          </div>
+        </div> <!-- cd-faq__content -->
+      </li>
+      <li class="cd-faq__item">
+        <a class="cd-faq__trigger" href="#0"><span>Game crashes or it is not responding</span></a>
+        <div class="cd-faq__content">
+          <div class="text-component">
+            <p>At some moments (pressing the button with the name of the selected character, or registration / login to the game) the game seems to stand still. In fact, the game loads the required resources at such times for example files, graphics or scripts.<br/><br/>
+            Sometimes in this case, Windows may decide that the application is not responding - this is normal. In such cases, however, you should not click as much as possible, because it will lead to the suspension or shutdown of the game due to too many very demanding tasks (selection of characters)<br/>
+            or due to an error sending data to user authorization servers. Such data can only be sent individually, so please be patient in this case.<br/>
+            It may be also effect of an bug. If you want, you can sumbit me bugs. Read more at home page</p>
+          </div>
+        </div> <!-- cd-faq__content -->
+      </li>
+      <li class="cd-faq__item">
+        <a class="cd-faq__trigger" href="#0"><span>How do I make my own theme for Pixel Zone</span></a>
+        <div class="cd-faq__content">
+          <div class="text-component">
+            <p>1. You must download the source code of the project to make it easier for you to create a theme.<br/><br/>
+              2. The project must be imported to Godot Engine (version 3.2, 3.2.x or higher)<br/><br/>
+              3. Choose one of the themes available in the project code and edit it, or create a new theme.<br/><br/>
+              Instructions on how to create a theme can be found in the godot documentation - here: <a href="https://docs.godotengine.org/en/3.1/tutorials/gui/gui_skinning.html">https://docs.godotengine.org/en/3.1/tutorials/gui/gui_skinning.html</a><br/><br/>
+              4. Requirements. The theme can be located only from one file - < name > .tres<br/><br/>
+              5. Game must be restarted after deleting adding or modifying extsting theme in 'Pixel Zone' directory
+            </p>
+          </div>
+        </div> <!-- cd-faq__content -->
+      </li>
+      <li class="cd-faq__item">
+        <a class="cd-faq__trigger" href="#0"><span>Where to place a theme file so that the game will detect it</span></a>
+        <div class="cd-faq__content">
+          <div class="text-component">
+            <p>Open the 'Documents' folder on your computer and find the 'Pixel Zone' folder there.<br/><br/>There, paste the file with the theme and run the game to load it during the game.</p>
+          </div>
+        </div> <!-- cd-faq__content -->
+      </li>
+      <li class="cd-faq__item">
+        <a class="cd-faq__trigger" href="#0"><span>The 'Pixel Zone' folder does not exist in the 'Documents' location</span></a>
+        <div class="cd-faq__content">
+          <div class="text-component">
+            <p>If you did not start the game for the first time - do it.<br/><br/>
+              The game will then create the appropriate folders and configuration files
+              If the folder is deleted the first time you start the game.<br/>
+              When you start the game, it will create it again with all subfolders and configuration files.
+            </p>
+          </div>
+        </div> <!-- cd-faq__content -->
+      </li>
+    </ul> <!-- cd-faq__group -->
+    <ul id="leveleditor" class="cd-faq__group">
+    <li class="cd-faq__title"><h2>Level Editor in Pixel Zone</h2></li>
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span>How do I add an Tile</span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+          <p>Press 'SELECT TILES' button, then select a tile and press space. When you want to place tile again press space.
+          </p>
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span>How do I add an background</span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+          <p>Press 'Add...' button, press 'Add background' then select a background do you want to use.
+          </p>
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span>How do I add an music</span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+          <p>Press 'Add...' button, press 'Add music' then select a music do you want to use.
+          </p>
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span>How do I save a level</span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+          <p>Press 'SAVE' button in left, top corner. Set a name for a level, press SAVE, and wait minute, while game is saving your game/
+          </p>
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span>How do I run a level</span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+          <p>In main menu press 'Play' and select a character.<br/>when you move to the level selection screen, click the "<=" button on the right side<br/>of the screen and select the level, you created, from the list.
+          </p>
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span>How to scale or rotate an object</span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+          <p>Select a tile, then press the space bar twice. Press the 'OPTIONS' button at the top of the screen and set the desired values.<br/>
+            The first option - scale in the x axis;<br/>
+            The second option - the scale on the y axis;<br/>
+            Third option - snapping in the x axis;<br/>
+            The fourth option - snapping in the y axis;
+            Fifth option - Rotation degrees.
+          </p>
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span>How to make Custom Tile?</span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+          <p>1. Open Custom Tile Creator via Level Editor<br/><br/>
+            2. Add graphics<br/><br/>
+            3. Add collision<br/><br/>
+            4. Scale collision and graphics if it is needed<br/><br/>
+            5. Export it<br/><br/>
+            6. Open Level Editor, You will see tiles, you made at the bottom of Tiles List.
+          </p>
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+  </ul>
+
+    <ul id="programmers" class="cd-faq__group">
+      <li class="cd-faq__title"><h2>For Godot Engine Devs</h2></li>
+      <li class="cd-faq__item">
+        <a class="cd-faq__trigger" href="#0"><span>Are there any tutorials?</span></a>
+        <div class="cd-faq__content">
+          <div class="text-component">
+            <p>Yes. You can find Polish Godot Engine tutorials <a href="https://www.youtube.com/channel/UC71U5GLMcpg5y6gKKhyQRLQ?view_as=subscriber">here</a>.<br/><br/>All tutorials are based on Pixel Zone. Download (always up to date) source code <a href="https://github.com/MasterPolska123/pixel-zone-master/archive/master.zip">here</a>.
+          </p>
+        </div>
+      </div> <!-- cd-faq__content -->
+    </li>
+    <li class="cd-faq__item">
+      <a class="cd-faq__trigger" href="#0"><span>How do i change tile in level editor</span></a>
+      <div class="cd-faq__content">
+        <div class="text-component">
+            <p>1. Select the button that should add an instance of the tile you prepared earlier<br/>
+                and find its 'pressed' method. It should look something like this:<br/>
+                func _on_Tile2_pa_11_pressed():<br/>
+                node = preload("res://LevelEditor/tiles/PixelAdventure/tile11.tscn").instance()<br/>
+                node.set_name('tile_pa' + str(number))<br/>
+                root.add_child(node)<br/>
+                node.set_owner(root)<br/>
+                $SetCurrentTile.hide()<br/><br/>
+              2. In a line:<br/>
+                node = preload("res://LevelEditor/tiles/PixelAdventure/tile11.tscn").instance()<br/>
+                change the contents of 'preload()',<br/>
+                to the path that leads to the scene that the tile is selected for.<br/><br/>
+                IMPORTANT! THE PATH MUST BE A STRING<br/><br/>
+                3.Don't forget to change the texture 'normal'<br/>
+                (in the properties of the texture button you choose) to one,<br/>
+                that will be tile.
+              </p>
+            </div>
+          </div> <!-- cd-faq__content -->
+        </li>
+      </ul>
+
+      <ul id="problems" class="cd-faq__group">
+  			<li class="cd-faq__title"><h2>Problems with the game</h2></li>
+  			<li class="cd-faq__item">
+  				<a class="cd-faq__trigger" href="#0"><span>Game don't want to run.</span></a>
+  				<div class="cd-faq__content">
+            <div class="text-component">
+              <p>On Linux:<br/>
+                  Go to Game's installation directory.<br/>
+                  Open properties tab and select 'Allow executing file as a program'.<br/>
+                  Check if there is .pck file. If no, download installer and execute it again.<br/><br/><br/>
+                On Windows and Mac OS X:<br/>
+                Go to Game's installation directory.<br/>
+                  Check if there is .pck file. If no, download installer and execute it again.
+              </p>
+            </div>
+  				</div> <!-- cd-faq__content -->
+  			</li>
+        <li class="cd-faq__item">
+  				<a class="cd-faq__trigger" href="#0"><span>Game is not sending my score to leaderboard.<br/>(There are Null names in leaderboard instead of my name)</span></a>
+  				<div class="cd-faq__content">
+            <div class="text-component">
+              <p>1. Check Your WiFI connection status<br/>
+                2. Check if you are logged in<br/>
+                3. Restart game.<br/>
+                Game is saving your score also in encrypted file on PC,<br/>
+                so when next time you will launch game, it will send score loaded<br/>
+                from file to server, but only if you will be logged into Your Account.<br/>
+              </p>
+            </div>
+  				</div> <!-- cd-faq__content -->
+  			</li>
+      </ul>
+    </div>
+
+
+	<a href="#0" class="cd-faq__close-panel text-replace">Close</a>
+
+  <div class="cd-faq__overlay" aria-hidden="true"></div>
+</section> <!-- cd-faq -->
+<script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
