@@ -246,7 +246,7 @@ td{border-width:0 1px;}
 
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
-body{color:#CBCBCB; background-attachment: fixed; background-image: url('../../images/demo/backgrounds/06.png');}
+body{color:#CBCBCB; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-image: url('../../images/IMG_0008.jpeg');}
 a{color:#FF8A00;}
 a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
 hr, .borderedbox{border-color:#D7D7D7;}
