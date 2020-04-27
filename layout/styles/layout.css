@@ -54,7 +54,7 @@ File: Layout CSS
   display: block;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background: #fff;
+  background-image: url('images/demo/backgrounds/06.png');
   padding: 15px;
   outline: none;
   width: 100%;
@@ -246,7 +246,7 @@ td{border-width:0 1px;}
 
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
-body{color:#CBCBCB; background-color:#1D1D1D;}
+body{color:#CBCBCB; background-attachment: fixed; background-image: url('../../images/demo/backgrounds/06.png');}
 a{color:#FF8A00;}
 a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
 hr, .borderedbox{border-color:#D7D7D7;}
@@ -254,9 +254,9 @@ label span{color:#FF0000; background-color:inherit;}
 input:focus, textarea:focus, *:required:focus{border-color:#FF8A00;}
 
 .overlay{color:#FFFFFF; background-color:inherit;}
-.overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
+.overlay::after{color:inherit; background-color:rgba(0,0,0,.45);}
 .overlay.light{color:#474747;}
-.overlay.light::after{background-color:rgba(255,255,255,.7);}
+.overlay.light::after{background-color:rgba(255,255,255, 0.7);}
 
 .btn, .btn.inverse:hover{color:#FFFFFF; background-color:#FF8A00; border-color:#FF8A00;}
 .btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
@@ -272,8 +272,8 @@ a > .icon:hover, .services article:hover .icon{color:#FFFFFF; background-color:#
 .row1{color:#474747; background-color:#FFFFFF; border-color:rgba(0,0,0,.1);}
 .row2, .row2 a{}
 .row3{color:#474747; background-color:#FFFFFF;}
-.row4{color:#CBCBCB; background-color:#1D1D1D;}
-.row5, .row5 a{color:#CBCBCB; background-color:#1D1D1D;}
+.row4{color:#CBCBCB; background: none}
+.row5, .row5 a{color:#CBCBCB; background-color:#1D1D1D}
 .row5{border-color:rgba(255,255,255,.1);}
 
 
