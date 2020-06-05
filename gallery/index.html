@@ -268,6 +268,7 @@ Licence URI: https://www.os-templates.com/template-terms
           <ul class="nospace clear">
             <p><i class="fa fa-film"></i> Videos</p>
             <li class="one_quarter first"><a href="#sVid"><video id='sVid' src="source_images/srpg/vid.mp4" alt="Test of walking mechanics"></a></li>
+            <li class="one_quarter"><a href="#sVid2"><video id='sVid2' src="source_images/srpg/scailing.mp4" alt="New options and scailing mechanic"></a></li>
           </ul>
         </figure>
       </div>
@@ -335,6 +336,7 @@ var simg7 = document.getElementById("sImg7");
 var simg8 = document.getElementById("sImg8");
 var simg9 = document.getElementById("sImg9");
 var svid = document.getElementById("sVid");
+var svid2 = document.getElementById("sVid2");
 var modalImg = document.getElementById("img01");
 var modalVid = document.getElementById("vid01");
 var copyright = document.getElementById("copyright");
@@ -436,8 +438,18 @@ svid.onclick = function(){
   divfooter.style.display = "none";
   copyright.style.display = "none";
   modalVid.src = this.src;
-  captionText.innerHTML = 'Test of walking mechanics.';
+  captionText.innerHTML = "Test of walking mechanics";
 }
+
+svid2.onclick = function(){
+  modal.style.display = "block";
+  modalVid.style.display = "block";
+  divfooter.style.display = "none";
+  copyright.style.display = "none";
+  modalVid.src = this.src;
+  captionText.innerHTML = "New options and scailing mechanic";
+}
+
 img.onclick = function(){
   modal.style.display = "block";
   modalImg.style.display = "block";
